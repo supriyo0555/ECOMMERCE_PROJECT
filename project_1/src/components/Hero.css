@@ -1,0 +1,23 @@
+.hero {
+  height: 400px;
+  background-color: #999999; /* Matches your screenshot gray background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+
+.hero p { font-size: 1.2rem; margin-bottom: 25px; opacity: 0.9; }
+
+.shop-now-btn {
+  background-color: #ff6200;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}

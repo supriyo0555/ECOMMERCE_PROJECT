@@ -1,0 +1,21 @@
+.category-card {
+  height: 140px;
+  background: #ffffff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  background-color: #f8f9fa;
+}
+
+.category-card img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
