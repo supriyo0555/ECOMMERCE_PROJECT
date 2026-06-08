@@ -1,0 +1,54 @@
+.account-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 420px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+.account-box h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.account-box p {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Login Button */
+.account-box button {
+  background-color: #2874f0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.account-box button:hover {
+  background-color: #1b5fd6;
+}
+
+/* List after login */
+.account-box ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.account-box ul li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.account-box ul li:hover {
+  background: #f7f7f7;
+}

@@ -1,0 +1,187 @@
+/* ===== PROFESSIONAL HERO BANNER ===== */
+.hero {
+  min-height: 440px;
+  background: linear-gradient(135deg, #2f8f46 0%, #349347 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #111;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  letter-spacing: -1px;
+  animation: slideDown 0.6s ease;
+  color: #111;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin: 0 0 35px 0;
+  opacity: 0.8;
+  font-weight: 400;
+  animation: slideUp 0.6s ease 0.1s both;
+  color: #555;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: slideUp 0.6s ease 0.2s both;
+}
+
+.shop-now-btn,
+.become-seller-hero-btn {
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.shop-now-btn {
+  background: linear-gradient(black);
+  color: white;
+}
+
+.shop-now-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(47, 143, 70, 0.4);
+}
+
+.become-seller-hero-btn {
+  background: linear-gradient(black);
+  color: white;
+}
+
+.become-seller-hero-btn:hover {
+  background: rgba(47, 143, 70, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(47, 143, 70, 0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 380px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+  }
+
+  .shop-now-btn,
+  .become-seller-hero-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 340px;
+    padding: 20px 0;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .shop-now-btn,
+  .become-seller-hero-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
